@@ -1,0 +1,184 @@
+{
+  "experiences": [
+    {
+      "timestamp": "2026-04-19T00:20:11.858327",
+      "action": "trading",
+      "result": {
+        "success": false,
+        "reason": "balance_low",
+        "amount": 0
+      },
+      "context": {
+        "made_money": false
+      },
+      "success": false
+    },
+    {
+      "timestamp": "2026-04-19T00:20:11.858469",
+      "action": "airdrops",
+      "result": {
+        "success": true,
+        "airdrops_checked": 5,
+        "eligible": [
+          "ZetaChain",
+          "LayerZero",
+          "StarkNet",
+          "zkSync",
+          "Arbitrum"
+        ],
+        "potential_value": "$250"
+      },
+      "context": {
+        "made_money": true
+      },
+      "success": true
+    },
+    {
+      "timestamp": "2026-04-19T00:20:11.858628",
+      "action": "affiliates",
+      "result": {
+        "success": true,
+        "affiliates": [
+          {
+            "platform": "Binance",
+            "potential": "$10-100/referral"
+          },
+          {
+            "platform": "Bybit",
+            "potential": "$10-50/referral"
+          },
+          {
+            "platform": "TradingView",
+            "potential": "$30-100/ referral"
+          }
+        ],
+        "action_needed": "Crear enlaces de referido \u00fanicos"
+      },
+      "context": {
+        "made_money": true
+      },
+      "success": true
+    },
+    {
+      "timestamp": "2026-04-19T00:20:11.858853",
+      "action": "products",
+      "result": {
+        "success": true,
+        "products": [
+          {
+            "name": "KAI Trading Bot",
+            "price": 29,
+            "sales": 0
+          },
+          {
+            "name": "KAI Airdrop Hunter",
+            "price": 19,
+            "sales": 0
+          },
+          {
+            "name": "KAI Mastermind Course",
+            "price": 99,
+            "sales": 0
+          }
+        ],
+        "total_potential": 0
+      },
+      "context": {
+        "made_money": true
+      },
+      "success": true
+    }
+  ],
+  "successes": [
+    {
+      "timestamp": "2026-04-19T00:20:11.858469",
+      "action": "airdrops",
+      "result": {
+        "success": true,
+        "airdrops_checked": 5,
+        "eligible": [
+          "ZetaChain",
+          "LayerZero",
+          "StarkNet",
+          "zkSync",
+          "Arbitrum"
+        ],
+        "potential_value": "$250"
+      },
+      "context": {
+        "made_money": true
+      },
+      "success": true
+    },
+    {
+      "timestamp": "2026-04-19T00:20:11.858628",
+      "action": "affiliates",
+      "result": {
+        "success": true,
+        "affiliates": [
+          {
+            "platform": "Binance",
+            "potential": "$10-100/referral"
+          },
+          {
+            "platform": "Bybit",
+            "potential": "$10-50/referral"
+          },
+          {
+            "platform": "TradingView",
+            "potential": "$30-100/ referral"
+          }
+        ],
+        "action_needed": "Crear enlaces de referido \u00fanicos"
+      },
+      "context": {
+        "made_money": true
+      },
+      "success": true
+    },
+    {
+      "timestamp": "2026-04-19T00:20:11.858853",
+      "action": "products",
+      "result": {
+        "success": true,
+        "products": [
+          {
+            "name": "KAI Trading Bot",
+            "price": 29,
+            "sales": 0
+          },
+          {
+            "name": "KAI Airdrop Hunter",
+            "price": 19,
+            "sales": 0
+          },
+          {
+            "name": "KAI Mastermind Course",
+            "price": 99,
+            "sales": 0
+          }
+        ],
+        "total_potential": 0
+      },
+      "context": {
+        "made_money": true
+      },
+      "success": true
+    }
+  ],
+  "failures": [
+    {
+      "timestamp": "2026-04-19T00:20:11.858327",
+      "action": "trading",
+      "result": {
+        "success": false,
+        "reason": "balance_low",
+        "amount": 0
+      },
+      "context": {
+        "made_money": false
+      },
+      "success": false
+    }
+  ]
+}
