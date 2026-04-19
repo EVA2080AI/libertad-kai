@@ -1,0 +1,14 @@
+[
+  {
+    "name": "crypto-trading-bot",
+    "description": "Bot autom\u00e1tico de trading para Binance con estrategias configurables",
+    "stack": [
+      "python",
+      "binance-api"
+    ],
+    "complexity": 2.5,
+    "estimated_value": 125.0,
+    "status": "created",
+    "created_at": "2026-04-18T21:40:16.431459"
+  }
+]

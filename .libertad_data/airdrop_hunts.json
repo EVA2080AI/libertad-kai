@@ -1,0 +1,47 @@
+[
+  {
+    "nombre": "LayerZero",
+    "url": "https://layerzero.network/",
+    "tarea": "Puente de tokens a testnet",
+    "reward": "$200-2000",
+    "dificultad": "Media",
+    "tiempo": "30 min",
+    "status": "READY"
+  },
+  {
+    "nombre": "ZetaChain",
+    "url": "https://zetachain.com/",
+    "tarea": "Transacciones en testnet",
+    "reward": "$100-500",
+    "dificultad": "Baja",
+    "tiempo": "20 min",
+    "status": "READY"
+  },
+  {
+    "nombre": "Monad",
+    "url": "https://www.monad.xyz/",
+    "tarea": "Actividad en testnet",
+    "reward": "$500-5000",
+    "dificultad": "Alta",
+    "tiempo": "1 hora",
+    "status": "WAITLIST"
+  },
+  {
+    "nombre": "Berachain",
+    "url": "https://www.berachain.com/",
+    "tarea": "Validar en testnet",
+    "reward": "$200-2000",
+    "dificultad": "Media",
+    "tiempo": "45 min",
+    "status": "READY"
+  },
+  {
+    "nombre": "Scroll",
+    "url": "https://scroll.io/",
+    "tarea": "Puente y uso de dApps",
+    "reward": "$50-200",
+    "dificultad": "Baja",
+    "tiempo": "15 min",
+    "status": "READY"
+  }
+]
