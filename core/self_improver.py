@@ -1,10 +1,12 @@
 """
 KAI Self-Improver - Auto-aprendizaje y crecimiento autónomo
+Ahora con Ollama - LLM local sin costos
 """
 import json
 import os
 from datetime import datetime
 from pathlib import Path
+from core.ollama_ai import ollama_ai, check_ollama_status
 
 class KAISelfImprover:
     def __init__(self):
@@ -114,6 +116,23 @@ class KAISelfImprover:
         """Calcular nivel de evolución"""
         base = len(self.memories["successes"])
         return min(base // 5, 10)  # Max level 10
+    
+    def think_with_ollama(self, prompt: str) -> str:
+        """Pensar usando Ollama local"""
+        status = check_ollama_status()
+        if status["connected"]:
+            return ollama_ai.generate(prompt, system="Eres KAI, agente autónomo. Responde de forma concisa.")
+        return "Ollama no disponible"
+    
+    def auto_decide(self, context: str) -> str:
+        """KAI toma decisiones automáticamente con Ollama"""
+        return self.think_with_ollama(f"""
+Contexto: {context}
+Eres KAI. Analiza y decide:
+1. ¿Qué acción tomar?
+2. ¿Por qué?
+3. ¿Riesgo?
+Responde en 3 líneas máximo.""")
 
 def kai_live():
     """Loop principal de vida de KAI"""

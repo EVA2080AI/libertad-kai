@@ -13,6 +13,7 @@ import time
 import random
 from datetime import datetime
 from pathlib import Path
+from core.ollama_ai import ollama_ai, check_ollama_status
 
 # Imports locales
 from core.self_improver import KAISelfImprover
@@ -25,9 +26,17 @@ class KAILife:
         self.improver = KAISelfImprover()
         self.income = IncomeEngine()
         self.replicator = KAIReplicator()
+        self.ollama_status = check_ollama_status()
         
         self.state_file = Path("core/kai_state.json")
         self.load_state()
+        
+        # Mostrar status de Ollama
+        if self.ollama_status["connected"]:
+            print(f"🧠 Ollama conectado: {self.ollama_status['current']}")
+            print(f"   Modelos: {', '.join(self.ollama_status['models'])}")
+        else:
+            print("⚠️ Ollama offline - usando modo básico")
         
     def load_state(self):
         """Cargar estado anterior"""
